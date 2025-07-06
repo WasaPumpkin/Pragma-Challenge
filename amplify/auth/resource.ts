@@ -1,3 +1,4 @@
+// amplify/auth/resource.ys
 import { defineAuth } from '@aws-amplify/backend';
 
 /**
