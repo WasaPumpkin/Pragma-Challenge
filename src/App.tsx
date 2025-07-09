@@ -93,7 +93,7 @@ function App() {
 
   return (
     <main>
-      <h1>Welcome, {user?.signInDetails?.loginId}</h1>
+      <h1>Bienvenido, {user?.signInDetails?.loginId}</h1>
 
       <div
         style={{
@@ -103,7 +103,7 @@ function App() {
           borderRadius: '5px',
         }}
       >
-        <h3>Add a new Todo</h3>
+        <h3>Addiciona un Texto y una imagen</h3>
         <input
           type="text"
           placeholder="Todo content..."
@@ -117,10 +117,10 @@ function App() {
             setNewTodoFile(e.target.files ? e.target.files[0] : null)
           }
         />
-        <button onClick={createTodoWithImage}>+ Create Todo</button>
+        <button onClick={createTodoWithImage}>+ Crear Historia</button>
       </div>
 
-      <h2>Your Todos</h2>
+      <h2>Tus Historias</h2>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id} style={{ marginBottom: '10px', listStyle: 'none' }}>
