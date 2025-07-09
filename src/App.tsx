@@ -117,10 +117,10 @@ function App() {
             setNewTodoFile(e.target.files ? e.target.files[0] : null)
           }
         />
-        <button onClick={createTodoWithImage}>+ Crear Historia</button>
+        <button onClick={createTodoWithImage}>+ Crea Nueva Historia</button>
       </div>
 
-      <h2>Tus Historias</h2>
+      <h2>Mis Historias</h2>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id} style={{ marginBottom: '10px', listStyle: 'none' }}>
